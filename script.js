@@ -85,7 +85,7 @@ while (i < n) {
 console.log(fb_while);
 
 /// check prime
-n = 129;
+n = 17;
 let prime = true;
 for (i = 2; i*i <= n; i++) {
     if (n % i == 0){
@@ -94,3 +94,17 @@ for (i = 2; i*i <= n; i++) {
     }
 }
 console.log(prime);
+
+n = 23;
+for ( i = 2; i*i <= n; i++) {
+    prime = true;
+    for ( j = 2; j < i ; j++){
+        if (n % i == 0){
+            prime = false;
+            break;
+        }
+    }
+    if (prime != false){
+        console.log(i);
+    }
+}
