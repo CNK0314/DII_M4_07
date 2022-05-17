@@ -9,6 +9,7 @@
 // console.log(1==true);
 // console.log(1===true);
 
+/// Tax
 // let receive = 999999;
 // let rate;
 // if(receive <= 150000){
@@ -37,6 +38,7 @@
 // }
 // console.log('You have to pay ' + rate );
 
+/// factorial
 let nf = 3;
 let fac_f = 1;
 if(nf==0){
@@ -57,5 +59,27 @@ while(nw > 0){
 }
 console.log(fac_w);
 
+/// fibonacci
+let n = 5;
+let f0 = 0;
+let f1 = 1;
+let fb_for = 1;
+for (let i = 2; i < n; i++){
+    f0 = f1;
+    f1 = fb_for;
+    fb_for = f0 + f1; 
+}
+console.log(fb_for);
 
-
+ n = 10;
+ f0 = 0;
+ f1 = 1;
+ let fb_while = 1;
+ let i = 2;
+while (i < n) {
+    f0 = f1;
+    f1 = fb_while;
+    fb_while = f0 + f1;
+    i++; 
+}
+console.log(fb_while);
