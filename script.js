@@ -83,3 +83,14 @@ while (i < n) {
     i++; 
 }
 console.log(fb_while);
+
+/// check prime
+n = 129;
+let prime = true;
+for (i = 2; i*i <= n; i++) {
+    if (n % i == 0){
+        prime = false;
+        break;
+    }
+}
+console.log(prime);
