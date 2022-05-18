@@ -1,0 +1,26 @@
+.container {
+    display: flex; 
+    justify-content: center;
+    background-color: lightgray;
+}
+.flex-item {
+    flex-basis: 50px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+#ok {
+    background-color: skyblue;
+    color: black;
+    border: 2px solid blue;
+}
+#cancel {
+    background-color: orange;
+    color: black;
+    border: 2px solid red;
+}
+#showDate {
+    background-color: rgb(239, 83, 219);
+    color: black;
+    border: 2px solid rgb(80, 5, 86);
+}

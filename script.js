@@ -39,72 +39,85 @@
 // console.log('You have to pay ' + rate );
 
 /// factorial
-let nf = 3;
-let fac_f = 1;
-if(nf==0){
-    console.log('1');
-}
-else{
-    for (let i = 1; i <= nf; i++) {
-        fac_f = fac_f * i;
-    }
-    console.log(fac_f);
-}
+// let nf = 3;
+// let fac_f = 1;
+// if(nf==0){
+//     console.log('1');
+// }
+// else{
+//     for (let i = 1; i <= nf; i++) {
+//         fac_f = fac_f * i;
+//     }
+//     console.log(fac_f);
+// }
 
-let nw = 5;
-let fac_w = 1;
-while(nw > 0){
-    fac_w = fac_w * nw;
-    nw--;
-}
-console.log(fac_w);
+// let nw = 5;
+// let fac_w = 1;
+// while(nw > 0){
+//     fac_w = fac_w * nw;
+//     nw--;
+// }
+// console.log(fac_w);
 
-/// fibonacci
-let n = 5;
-let f0 = 0;
-let f1 = 1;
-let fb_for = 1;
-for (let i = 2; i < n; i++){
-    f0 = f1;
-    f1 = fb_for;
-    fb_for = f0 + f1; 
-}
-console.log(fb_for);
+// /// fibonacci
+// let n = 5;
+// let f0 = 0;
+// let f1 = 1;
+// let fb_for = 1;
+// for (let i = 2; i < n; i++){
+//     f0 = f1;
+//     f1 = fb_for;
+//     fb_for = f0 + f1; 
+// }
+// console.log(fb_for);
 
- n = 10;
- f0 = 0;
- f1 = 1;
- let fb_while = 1;
- let i = 2;
-while (i < n) {
-    f0 = f1;
-    f1 = fb_while;
-    fb_while = f0 + f1;
-    i++; 
-}
-console.log(fb_while);
+//  n = 10;
+//  f0 = 0;
+//  f1 = 1;
+//  let fb_while = 1;
+//  let i = 2;
+// while (i < n) {
+//     f0 = f1;
+//     f1 = fb_while;
+//     fb_while = f0 + f1;
+//     i++; 
+// }
+// console.log(fb_while);
 
 /// check prime
-n = 17;
-let prime = true;
-for (i = 2; i*i <= n; i++) {
-    if (n % i == 0){
-        prime = false;
-        break;
-    }
-}
-console.log(prime);
+// n = 17;
+// let prime = true;
+// for (i = 2; i*i <= n; i++) {
+//     if (n % i == 0){
+//         prime = false;
+//         break;
+//     }
+// }
+// console.log(prime);
 
-n = 23;
-for ( i = 2; i*i <= n; i++) {
-    prime = true;
-    for ( j = 2; j < i ; j++){
-        if (n % i == 0){
-            prime = false;
-            break;
-        }
-    }
-    if (prime != false){
-        console.log(i);
-    }
-}
+// n = 23;
+// for ( i = 2; i*i <= n; i++) {
+//     prime = true;
+//     for ( j = 2; j < i ; j++){
+//         if (n % i == 0){
+//             prime = false;
+//             break;
+//         }
+//     }
+//     if (prime != false){
+//         console.log(i);
+//     }
+// }
+
+let okButton = document.getElementById('ok');
+okButton.addEventListener('click',function( ){
+    alert('let me see...');
+});
+let cancelButton = document.getElementById('cancel');
+cancelButton.addEventListener('click',function( ){
+    alert('not ok...');
+});
+let showButton = document.getElementById('showDate');
+showButton.addEventListener('click',function(e){
+    document.getElementById('emptySpace').innerHTML = Date();
+});
